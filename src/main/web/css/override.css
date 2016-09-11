@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+/**
+*	@author rabindranath.s
+*	For Extjs Components Only
+*	Don't Override any component color effects here, instead use apiOverride.ftl
+*	Mainly for bug fixes
+*/
+
+/* Mask Cls*/
+.x-mask.x-border-box {
+	opacity: 0.8;
+	background: #000;
+}
+
+/* Fields are over padded from top so some characters like "_" are not visible */
+.x-form-text-default {
+	padding-top: 3px;
+}
+
+/** Fieldset title **/
+.x-fieldset-header-default>.x-fieldset-header-text {
+	color: #008080;
+    font: bold 13px/16px helvetica,arial,verdana,sans-serif;
+}
+
+.x-grid-row-summary .x-grid-cell, .x-grid-row-summary .x-grid-rowwrap,
+	.x-grid-row-summary .x-grid-cell-rowbody {
+	font-weight: bold;
+}
+
+/**
+*	Resolves the icon alignment in case of font icons
+**/
+.x-panel-header-title-default>.x-title-icon-wrap-default>.x-title-icon-default
+	{
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.x-btn-icon-el-default-small, .x-window-header-title-default > .x-title-icon-wrap-default > .x-title-icon-default {
+	font-family: helvetica, arial, verdana, sans-serif, FontAwesome;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.x-btn-icon-left > .x-btn-icon-el-default-medium, .x-btn-icon-right > .x-btn-icon-el-default-medium {
+    color: white;
+    font-family: helvetica,arial,verdana,sans-serif,FontAwesome;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.x-btn-icon-left > .x-btn-icon-el-default-toolbar-small, .x-btn-icon-right > .x-btn-icon-el-default-toolbar-small {
+	color: white;
+    font-family: helvetica,arial,verdana,sans-serif,FontAwesome;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.x-layout-split-right {
+    background-color: #636359 !important;
+}
+
+

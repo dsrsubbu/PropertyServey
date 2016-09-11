@@ -1,0 +1,167 @@
+@CHARSET "UTF-8";
+
+.x-ims-add {
+	background-image: url("../images/add.png") !important;
+}
+
+.x-ims-edit {
+	background-image: url("../images/edit.png") !important;
+}
+
+.x-ims-delete {
+	background-image: url("../images/delete.png") !important;
+}
+
+.x-ims-save {
+	background-image: url("../images/save_icon.png") !important;
+}
+
+.x-ims-cancel {
+	background-image: url("../images/cancel.png") !important;
+}
+
+.x-print-action-icon {
+	background: url("../images/printer_blue_icon.png") no-repeat;
+	height: 16px !important;
+	width: 16px !important;
+	background-size: 16px 16px;
+}
+
+.x-print-no-action-icon {
+	height: 0px !important;
+	width: 0px !important;
+}
+
+.x-ims-excel {
+	background-image: url("../images/excel_24.png") !important;
+	background-size: 16px 16px;
+}
+
+.x-ims-escalation-remove {
+	background-color: transparent !important;
+	background-image: none !important;
+	border: none;
+	color: red;
+}
+
+/* Data Sync Module */
+.x-ims-datasync {
+	background-image: url("../images/sync_32.png");
+	height: 32px;
+	width: 32px;
+}
+
+.datasync-heading {
+	background-color: #A8A8A8;
+	border: medium none;
+	color: #ffffff;
+	display: table;
+	font-size: 18px;
+	font-weight: bold;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.datasync-heading span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.datasync-view {
+	height: calc(100% - 50px);
+	margin: 0 auto;
+	overflow: auto;
+	max-width: 500px;
+}
+
+.datasync-section {
+	background-color: #008080;
+	border: 1px solid #005353;
+	color: #fff;
+	cursor: pointer;
+	display: table;
+	float: left;
+	font-weight: bold;
+	min-width: 180px;
+	position: relative;
+	text-align: left;
+}
+
+.datasync-section.x-item-selected {
+	background-color: #2E8B57;
+}
+
+.datasync-section span.wrap {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.datasync-section span.inner-wrap {
+	margin-left: 10px;
+}
+
+.datasync-section span.icon {
+	background-image: url("../images/sync_32.png");
+	background-position: center center;
+	display: inline-block;
+	margin-right: 10px;
+	height: 32px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+.datasync-section span.text {
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE/Edge */
+	user-select: none; /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.x-spotlight {
+	background-color: #ccc;
+	z-index: 8999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+	width: 0;
+	height: 0;
+	zoom: 1;
+}
+
+.x-ims-hide {
+	display: none;
+}
+
+.x-ims-ticket-comment-tpl {
+	font-size: 12px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 12px;
+}
+
+/*
+*/
+.x-boundlist-item .chkCombo {
+    background: transparent url("../js/lib/ExtJs-5.1.1/packages/ext-theme-neptune/resources/images/menu/default-unchecked.png") no-repeat scroll 0 3px;
+    padding-left: 20px;
+}
+.x-boundlist-selected .chkCombo{
+    background: transparent url("../js/lib/ExtJs-5.1.1/packages/ext-theme-neptune/resources/images/menu/default-checked.png") no-repeat scroll 0 3px;
+    padding-left: 20px;
+}

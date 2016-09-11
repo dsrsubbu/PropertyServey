@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.ps.hibernate.models.Role</value>
+				<value>com.ps.hibernate.models.UserInfo</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="show_sql">true</prop>
+				<prop key="hibernate.enable_lazy_load_no_trans">false</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="${datasource.driver}" />
+		<property name="jdbcUrl" value="${datasource.url}" />
+		<property name="user" value="${datasource.username}" />
+		<property name="password" value="${datasource.password}" />
+		<property name="minPoolSize" value="${datasource.minPoolSize}" />
+		<property name="maxPoolSize" value="${datasource.maxPoolSize}" />
+		<property name="maxIdleTime" value="${datasource.maxIdleTime}" />
+		<property name="acquireIncrement" value="1" />
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="txInterceptor"
+		class="org.springframework.transaction.interceptor.TransactionInterceptor">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="transactionAttributeSource">
+			<bean
+				class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource" />
+		</property>
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager"
+		proxy-target-class="true" />
+
+	<bean id="dao" class="com.ps.hibernate.common.HibernateDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+</beans>

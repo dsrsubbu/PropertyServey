@@ -1,0 +1,426 @@
+@charset "utf-8";
+/* CSS Document
+   Created by : Venkatesh Ammireddy,
+   Date : 19th July,2015.
+   Contact Ph: +91-9030436110.
+ */
+html {
+	background: rgba(0, 0, 0, 0) url("../images/bg.jpg") no-repeat fixed center center / 100% 100%;
+}
+
+html, body {
+	text-shadow: none !important;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-control {
+	border: 1px solid #427730 !important;
+}
+
+h1 {
+	text-align: center;
+	font-size: 30px !important;
+	color: #000 !important;
+}
+
+input {
+	border-radius: none;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	/*    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;*/
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	/*    border-top-left-radius: 0;
+    border-top-right-radius: 0;*/
+}
+
+.account-wall {
+	margin-top: 20%;
+	padding: 10px 0px 20px 0px;
+	background-color: rgba(255, 255, 255, 0.7);
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	border: 3px solid #427730;
+}
+
+.login-title {
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+	display: block;
+}
+
+.profile-img {
+	margin: 0 auto 10px;
+	display: block;
+}
+
+.need-help {
+	margin-top: 10px;
+}
+
+.new-account {
+	display: block;
+	margin-top: 10px;
+}
+
+button {
+	background-color: #427730 !important;
+	border-radius: 0px !important;
+	color: #FFF !important;
+	padding: 13px !important;
+}
+
+button:hover {
+	background-color: #8fbd37 !important;
+	border-radius: 0px !important;
+	padding: 13px !important;
+}
+
+/* all */
+::-webkit-input-placeholder {
+	color: #7d7d7d !important;
+	font-weight: normal !important;
+}
+
+::-moz-placeholder {
+	color: #7d7d7d !important;
+	font-weight: normal !important;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+	color: #7d7d7d !important;
+	font-weight: normal !important;
+} /* ie */
+input:-moz-placeholder {
+	color: #7d7d7d !important;
+	font-weight: normal !important;
+}
+
+.form-group {
+	position: relative !important;
+}
+
+.username {
+	background: url(../images/username.png) no-repeat;
+	width: 19px;
+	position: absolute !important;
+	right: 10px;
+	z-index: 888;
+	color: rgba(255, 255, 255, 0.0);
+	padding: 3px;
+	right: 20px;
+	margin-top: 16px;
+}
+
+.password {
+	background: url(../images/pwd.png) no-repeat;
+	width: 19px;
+	position: absolute !important;
+	right: 10px;
+	z-index: 888;
+	color: rgba(255, 255, 255, 0.0);
+	right: 20px;
+	padding: 3px;
+	margin-top: 16px;
+}
+
+.email {
+	background: url(../images/email.png) no-repeat;
+	width: 22px;
+	position: absolute !important;
+	right: 10px;
+	z-index: 888;
+	color: rgba(255, 255, 255, 0.0);
+	padding: 3px;
+	right: 20px;
+	margin-top: 16px;
+}
+
+.phone {
+	background: url(../images/phone.png) no-repeat;
+	width: 19px;
+	position: absolute !important;
+	right: 10px;
+	z-index: 888;
+	color: rgba(255, 255, 255, 0.0);
+	padding: 3px;
+	right: 20px;
+	margin-top: 16px;
+}
+
+.company {
+	background: url(../images/company.png) no-repeat;
+	width: 19px;
+	position: absolute !important;
+	right: 10px;
+	z-index: 888;
+	color: rgba(255, 255, 255, 0.0);
+	padding: 3px;
+	right: 20px;
+	margin-top: 16px;
+}
+
+.checkbox {
+	color: #FFF !important;
+}
+
+.fp {
+	float: left;
+	color: #fff;
+}
+
+.reg {
+	color: fcc200 !important;
+	margin-left: 10px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) { /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) and (orientation : landscape) {
+	/* Styles */
+	.account-wall {
+		margin-top: 20%;
+		width: 350px;
+		padding: 40px 0px 20px 0px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) and (orientation : portrait) {
+	/* Styles */
+	.account-wall {
+		margin-top: 20%;
+		margin-left: 50%;
+		width: 350px;
+		padding: 40px 0px 20px 0px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) and (orientation : landscape) and
+	(-webkit-min-device-pixel-ratio : 2) {
+	/* Styles */
+	.account-wall {
+		margin-top: 20%;
+		width: 350px;
+		padding: 40px 0px 20px 0px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width
+	: 1024px) and (orientation : portrait) and
+	(-webkit-min-device-pixel-ratio : 2) {
+	/* Styles */
+	.account-wall {
+		margin-top: 20%;
+		margin-left: 50%;
+		width: 350px;
+		padding: 40px 0px 20px 0px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) { /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) and (orientation : landscape) and
+	(-webkit-min-device-pixel-ratio : 2) { /* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) and (orientation : portrait) {
+	.account-wall {
+		margin-top: 20%;
+		width: 290px;
+		font-size: 13px;
+		padding: 20px 0px 20px 0px;
+		position: relative;
+		bottom: 25px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+	.profile-img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) and (orientation : landscape) {
+	.account-wall {
+		margin-top: 10%;
+		width: 400px;
+		margin-left: 25px;
+		font-size: 13px;
+		padding: 20px 0px 20px 0px;
+		position: relative;
+		bottom: 25px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+	.profile-img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) and (orientation : portrait) and
+	(-webkit-min-device-pixel-ratio : 2) {
+	/* Styles */
+	.account-wall {
+		margin-top: 20%;
+		margin-left:25px;
+		width: 280px;
+		padding: 40px 0px 20px 0px;
+		background-color: rgba(36, 66, 78, 0.7);
+		-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		border: 3px solid #FFF;
+	}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	568px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	2) { /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2)
+	{ /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height:
+	667px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	2) { /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height:
+	667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2)
+	{ /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height:
+	736px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	2) { /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height:
+	736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2)
+	{ /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	640px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	2) { /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2)
+	{ /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	640px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	3) { /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height:
+	640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3)
+	{ /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height:
+	640px) and (orientation : landscape) and (-webkit-device-pixel-ratio:
+	3) { /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height:
+	640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3)
+	{ /* Styles */
+}
+
+.alert {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: white;
+	margin-bottom: 20px;
+	padding: 2px !important;
+	display: none;
+}
